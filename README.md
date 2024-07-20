@@ -32,7 +32,7 @@ cd ~/dotfiles
 
 ```sh
 ./install.sh
-# sh -c "$(wget -qO- https://raw.githubusercontent.com/seuusuario/dotfiles/main/setup.sh)"
+# sh -c "$(wget -qO- https://raw.githubusercontent.com/jeffsilva01/dotfiles/main/install.sh)"
 ```
 
 Este script criará links simbólicos dos arquivos de configuração no diretório do usuário.
