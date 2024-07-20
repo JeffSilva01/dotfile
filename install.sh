@@ -4,6 +4,14 @@
 ZSH_CUSTOM="$HOME/.zsh"
 CHEZMOI_REPO="https://github.com/jeffsilva01/dotfiles.git"
 
+# Function update system
+update_system() {
+	sudo pacman -Syu || {
+		printf "Failed to update system\n" >&2
+		return 1
+	}
+}
+
 # Function to install packages
 install_packages() {
 	local packages=(
@@ -60,6 +68,7 @@ setup_zsh_plugins() {
 	}
 }
 
+# Function to install ASDF
 install_asdf() {
 	git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0 || {
 		printf "Failed to install asdf\n" >&2
@@ -84,6 +93,7 @@ install_node_asdf() {
 
 # Main function
 main() {
+	update_system || exit 1
 	install_packages || exit 1
 	install_chezmoi || exit 1
 	install_asdf || exit 1
