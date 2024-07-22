@@ -23,6 +23,7 @@ install_packages() {
 		"docker"
 		"docker-compose"
 		"flatpak"
+		"vscodium-bin"
 		"libpamac-flatpak-plugin"
 		"tmux"
 	)
@@ -77,7 +78,7 @@ install_asdf() {
 }
 
 # Function to install Node.js with asdf
-install_node_asdf() {
+install_languages_asdf() {
 	if ! asdf plugin-list | grep -q "nodejs"; then
 		asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git || {
 			printf "Failed to add Node.js plugin to asdf\n" >&2
@@ -89,6 +90,30 @@ install_node_asdf() {
 		return 1
 	}
 	asdf global nodejs latest
+
+	if ! asdf plugin-list | grep -q "maven"; then
+		asdf plugin-add maven || {
+			printf "Failed to add Maven plugin to asdf\n" >&2
+			return 1
+		}
+	fi
+	asdf install maven latest || {
+		printf "Failed to install Maven with asdf\n" >&2
+		return 1
+	}
+	asdf global maven latest
+
+	if ! asdf plugin-list | grep -q "java"; then
+		asdf plugin-add java https://github.com/halcyon/asdf-java.git || {
+			printf "Failed to add Java plugin to asdf\n" >&2
+			return 1
+		}
+	fi
+	asdf install Java oracle-17.0.7 || {
+		printf "Failed to install Java with asdf\n" >&2
+		return 1
+	}
+	asdf global java oracle-17.0.7
 }
 
 # Main function
