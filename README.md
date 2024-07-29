@@ -10,32 +10,6 @@ Bem-vindo ao repositório dos meus dotfiles! Este repositório contém todas as 
 - **Zsh**: Configurações para o shell Zsh, incluindo temas e plugins.
 - **Git**: Configurações globais para o Git.
 - **VSCode**: Configurações e extensões para o Visual Studio Code (se aplicável).
-- **Scripts**: Scripts úteis para automatizar tarefas comuns.
-
-## Instalação
-
-Para instalar essas configurações na sua máquina, siga os passos abaixo:
-
-1. **Clone o repositório**:
-
-```sh
-git clone https://github.com/JeffSilva01/dotfiles.git ~/dotfiles
-```
-
-2. **Navegue até o diretório do repositório**:
-
-```sh
-cd ~/dotfiles
-```
-
-3. **Execute o script de instalação**:
-
-```sh
-./install.sh
-# sh -c "$(wget -qO- https://raw.githubusercontent.com/jeffsilva01/dotfiles/main/install.sh)"
-```
-
-Este script criará links simbólicos dos arquivos de configuração no diretório do usuário.
 
 ## Estrutura do Repositório
 
