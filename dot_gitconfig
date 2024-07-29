@@ -1,0 +1,29 @@
+[user]
+    name = Jefferson Silva
+    email = jeffsilva01.dev@gmail.com
+
+[init]
+    defaultBranch = main
+
+[alias]
+    a = add
+    aa = add --all
+    b = branch
+    ba = branch -a
+    c = commit
+    ca = commit --amend
+    cc = commit --amend --no-edit
+    d = diff
+    dc = diff --cached
+    f = fetch
+    l = log --oneline --decorate --graph --all
+    m = merge
+    p = push
+    pl = pull
+    s = status
+    st = stash
+    stp = stash pop
+    stb = stash branch
+    stl = stash list
+    unstage = reset HEAD --
+    last = log -1 HEAD
