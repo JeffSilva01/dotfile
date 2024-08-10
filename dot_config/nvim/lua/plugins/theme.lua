@@ -1,3 +1,6 @@
+-- stylua: ignore
+if true then return {} end
+
 return {
   { "rose-pine/neovim", name = "rose-pine" },
   {
