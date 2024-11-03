@@ -15,6 +15,7 @@ export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$PATH
 alias ls='exa --icons'
 alias bat='bat'
 alias htop='ytop'
+alias ccm='git diff | cody chat --stdin -m "Write a commit message for this diff"'
 
 . "$HOME/.asdf/asdf.sh"
 # append completions to fpath
@@ -23,8 +24,6 @@ fpath=(${ASDF_DIR}/completions $fpath)
 autoload -Uz compinit && compinit
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
 
 # now load zsh-syntax-highlighting plugin
 source /home/jeffsilva01/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

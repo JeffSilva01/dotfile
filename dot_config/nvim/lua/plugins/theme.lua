@@ -3,6 +3,7 @@
 
 return {
   { "rose-pine/neovim", name = "rose-pine" },
+  { "ellisonleao/gruvbox.nvim" },
   {
     "catppuccin/nvim",
     lazy = true,
@@ -14,7 +15,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "gruvbox",
     },
   },
 }
