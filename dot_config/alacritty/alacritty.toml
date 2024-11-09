@@ -1,8 +1,3 @@
-# Alacritty Configuration File
-import = [
-    "~/.config/alacritty/themes/gruvbox_dark.toml"
-]
-
 # Window dimensions
 [window]
 dimensions.columns = 100
@@ -56,10 +51,18 @@ style = "Block"
 unfocused_hollow = true
 
 # Shell
-[shell]
+[terminal.shell]
 program = "/usr/bin/tmux"
 args = ["new-session"]
 
 # Environmen
 [env]
 TERM = "xterm-256color"
+
+[general]
+# Alacritty Configuration File
+import = [
+    "~/.config/alacritty/themes/gruvbox_dark.toml"
+]
+
+[terminal]
