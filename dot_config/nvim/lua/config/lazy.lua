@@ -34,8 +34,8 @@ require("lazy").setup({
 
     { import = "lazyvim.plugins.extras.linting.eslint" },
 
-    { import = "lazyvim.plugins.extras.coding.copilot" },
-    { import = "lazyvim.plugins.extras.coding.copilot-chat" },
+    { import = "lazyvim.plugins.extras.ai.copilot" },
+    { import = "lazyvim.plugins.extras.ai.copilot-chat" },
 
     { import = "lazyvim.plugins.extras.lsp.none-ls" },
 
