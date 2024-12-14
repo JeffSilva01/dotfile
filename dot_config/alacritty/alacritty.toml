@@ -1,6 +1,6 @@
 [general]
 import = [
-    "~/.config/alacritty/themes/tokyo_night_storm.toml"
+    "~/.config/alacritty/themes/catppuccin_macchiato.toml"
 ]
 
 # Window dimensions

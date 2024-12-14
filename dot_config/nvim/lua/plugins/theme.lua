@@ -1,5 +1,5 @@
 -- stylua: ignore
-if true then return {} end
+-- if true then return {} end
 
 return {
   { "rose-pine/neovim", name = "rose-pine" },
@@ -8,6 +8,7 @@ return {
     "catppuccin/nvim",
     lazy = true,
     name = "catppuccin",
+    priority = 1000,
   },
   {
     "arcticicestudio/nord-vim",
@@ -15,7 +16,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "catppuccin-macchiato",
     },
   },
 }
