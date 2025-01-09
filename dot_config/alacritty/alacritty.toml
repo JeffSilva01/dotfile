@@ -1,6 +1,6 @@
 [general]
 import = [
-    "~/.config/alacritty/themes/catppuccin_macchiato.toml"
+    "~/.config/alacritty/themes/gruvbox_dark.toml"
 ]
 
 # Window dimensions
